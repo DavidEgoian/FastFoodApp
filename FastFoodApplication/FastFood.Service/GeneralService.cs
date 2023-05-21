@@ -1,6 +1,7 @@
 ﻿using FastFood.Models;
 using FastFood.Service.Interfaces;
 using Microsoft.Data.SqlClient;
+using System.Data;
 using System.Linq.Expressions;
 
 namespace FastFood.Service
@@ -17,7 +18,7 @@ namespace FastFood.Service
                 try
                 {
                     SqlCommand command = new(sqlExpression, connection);
-                    command.CommandType = System.Data.CommandType.StoredProcedure;
+                    command.CommandType = CommandType.StoredProcedure;
 
                     await connection.OpenAsync();
                     SqlDataReader reader =  await command.ExecuteReaderAsync();
@@ -25,7 +26,10 @@ namespace FastFood.Service
                     {
                         while(await reader.ReadAsync())
                         {
-                            result.Add(reader[0]);
+                            result.Add(new General
+                            {
+                                Balance = reader.GetDouble(0)
+                            });
                         }
                     }
                 }
@@ -37,6 +41,8 @@ namespace FastFood.Service
                 {
                     await connection.CloseAsync();
                 }
+
+                return result;
             }
         }
     }
