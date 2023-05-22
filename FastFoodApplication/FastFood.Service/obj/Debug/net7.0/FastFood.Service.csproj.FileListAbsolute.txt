@@ -1,0 +1,15 @@
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.Service\bin\Debug\net7.0\FastFood.Service.deps.json
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.Service\bin\Debug\net7.0\FastFood.Service.dll
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.Service\bin\Debug\net7.0\FastFood.Service.pdb
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.Service\bin\Debug\net7.0\FastFood.Models.dll
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.Service\bin\Debug\net7.0\FastFood.Models.pdb
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.Service\obj\Debug\net7.0\FastFood.Service.csproj.AssemblyReference.cache
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.Service\obj\Debug\net7.0\FastFood.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.Service\obj\Debug\net7.0\FastFood.Service.AssemblyInfoInputs.cache
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.Service\obj\Debug\net7.0\FastFood.Service.AssemblyInfo.cs
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.Service\obj\Debug\net7.0\FastFood.Service.csproj.CoreCompileInputs.cache
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.Service\obj\Debug\net7.0\FastFood.Service.csproj.CopyComplete
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.Service\obj\Debug\net7.0\FastFood.Service.dll
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.Service\obj\Debug\net7.0\refint\FastFood.Service.dll
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.Service\obj\Debug\net7.0\FastFood.Service.pdb
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.Service\obj\Debug\net7.0\ref\FastFood.Service.dll

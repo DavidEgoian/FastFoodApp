@@ -1,3 +1,6 @@
+using FastFood.Service;
+using FastFood.Models;
+
 namespace FastFood.UI
 {
     internal static class Program
@@ -8,6 +11,7 @@ namespace FastFood.UI
         [STAThread]
         static void Main()
         {
+            GlobalConfig.ChooseDbType(DbType.Sql);
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
