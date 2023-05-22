@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFood.Models", "FastFood.Models\FastFood.Models.csproj", "{F8E2EB7C-AB38-4D5F-8E8A-2BEAE5C4EE7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastFood.Service", "FastFood.Service\FastFood.Service.csproj", "{11B2036D-F275-4D5F-AD79-592E9C7B3AEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFood.Service", "FastFood.Service\FastFood.Service.csproj", "{11B2036D-F275-4D5F-AD79-592E9C7B3AEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastFood.UI", "FastFood.UI\FastFood.UI.csproj", "{E7FE215D-A93B-439B-83C5-04EF680C6395}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{11B2036D-F275-4D5F-AD79-592E9C7B3AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11B2036D-F275-4D5F-AD79-592E9C7B3AEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11B2036D-F275-4D5F-AD79-592E9C7B3AEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7FE215D-A93B-439B-83C5-04EF680C6395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7FE215D-A93B-439B-83C5-04EF680C6395}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7FE215D-A93B-439B-83C5-04EF680C6395}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7FE215D-A93B-439B-83C5-04EF680C6395}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

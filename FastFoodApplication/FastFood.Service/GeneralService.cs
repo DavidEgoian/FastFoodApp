@@ -8,10 +8,10 @@ namespace FastFood.Service
 {
     public class GeneralService : IGeneralRepository
     {
-        public async Task<List<General>> GetBalanceAsync()
+        public async Task<General> GetBalance()
         {
             const string sqlExpression = "sp_getWholeBalance";
-            List<General> result = new();
+            General result = new();
 
             using (SqlConnection connection = new(GlobalConfig.ConnectionString))
             {
@@ -26,10 +26,7 @@ namespace FastFood.Service
                     {
                         while(await reader.ReadAsync())
                         {
-                            result.Add(new General
-                            {
-                                Balance = reader.GetDouble(0)
-                            });
+                            result.Balance = reader.GetDouble(0);
                         }
                     }
                 }
