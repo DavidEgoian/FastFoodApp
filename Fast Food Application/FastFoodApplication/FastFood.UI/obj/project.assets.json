@@ -2044,11 +2044,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\davit\\OneDrive\\Desktop\\FastFoodApp\\FastFoodApp\\FastFoodApplication\\FastFood.UI\\FastFood.UI.csproj",
+      "projectUniqueName": "C:\\Users\\davit\\OneDrive\\Desktop\\FastFoodApp\\FastFoodApp\\Fast Food Application\\FastFoodApplication\\FastFood.UI\\FastFood.UI.csproj",
       "projectName": "FastFood.UI",
-      "projectPath": "C:\\Users\\davit\\OneDrive\\Desktop\\FastFoodApp\\FastFoodApp\\FastFoodApplication\\FastFood.UI\\FastFood.UI.csproj",
+      "projectPath": "C:\\Users\\davit\\OneDrive\\Desktop\\FastFoodApp\\FastFoodApp\\Fast Food Application\\FastFoodApplication\\FastFood.UI\\FastFood.UI.csproj",
       "packagesPath": "C:\\Users\\davit\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\davit\\OneDrive\\Desktop\\FastFoodApp\\FastFoodApp\\FastFoodApplication\\FastFood.UI\\obj\\",
+      "outputPath": "C:\\Users\\davit\\OneDrive\\Desktop\\FastFoodApp\\FastFoodApp\\Fast Food Application\\FastFoodApplication\\FastFood.UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2070,11 +2070,11 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\davit\\OneDrive\\Desktop\\FastFoodApp\\FastFoodApp\\FastFoodApplication\\FastFood.Models\\FastFood.Models.csproj": {
-              "projectPath": "C:\\Users\\davit\\OneDrive\\Desktop\\FastFoodApp\\FastFoodApp\\FastFoodApplication\\FastFood.Models\\FastFood.Models.csproj"
+            "C:\\Users\\davit\\OneDrive\\Desktop\\FastFoodApp\\FastFoodApp\\Fast Food Application\\FastFoodApplication\\FastFood.Models\\FastFood.Models.csproj": {
+              "projectPath": "C:\\Users\\davit\\OneDrive\\Desktop\\FastFoodApp\\FastFoodApp\\Fast Food Application\\FastFoodApplication\\FastFood.Models\\FastFood.Models.csproj"
             },
-            "C:\\Users\\davit\\OneDrive\\Desktop\\FastFoodApp\\FastFoodApp\\FastFoodApplication\\FastFood.Service\\FastFood.Service.csproj": {
-              "projectPath": "C:\\Users\\davit\\OneDrive\\Desktop\\FastFoodApp\\FastFoodApp\\FastFoodApplication\\FastFood.Service\\FastFood.Service.csproj"
+            "C:\\Users\\davit\\OneDrive\\Desktop\\FastFoodApp\\FastFoodApp\\Fast Food Application\\FastFoodApplication\\FastFood.Service\\FastFood.Service.csproj": {
+              "projectPath": "C:\\Users\\davit\\OneDrive\\Desktop\\FastFoodApp\\FastFoodApp\\Fast Food Application\\FastFoodApplication\\FastFood.Service\\FastFood.Service.csproj"
             }
           }
         }

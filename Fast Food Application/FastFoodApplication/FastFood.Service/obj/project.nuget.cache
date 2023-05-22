@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gOtU15b0aHntDYE5tAvRGqN+p84ZZUYSK48Ti657E1j6rGJJfNjQRe74NUcuO/E3YQN1mG6DR1VYX5OTOmqoKA==",
+  "dgSpecHash": "mvXPl0aaOxBiUGA2aGle5iNLERQPfXxMpUr9SkpOmREbGyn9q62e36HSHsBWhGCigqJiJgHfVu95g8relONGPw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\davit\\OneDrive\\Desktop\\FastFoodApp\\FastFoodApp\\FastFoodApplication\\FastFood.Service\\FastFood.Service.csproj",
+  "projectFilePath": "C:\\Users\\davit\\OneDrive\\Desktop\\FastFoodApp\\FastFoodApp\\Fast Food Application\\FastFoodApplication\\FastFood.Service\\FastFood.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\davit\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\davit\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

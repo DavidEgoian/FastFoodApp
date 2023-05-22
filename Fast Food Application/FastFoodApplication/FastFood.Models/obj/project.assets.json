@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\davit\\OneDrive\\Desktop\\FastFoodApp\\FastFoodApp\\FastFoodApplication\\FastFood.Models\\FastFood.Models.csproj",
+      "projectUniqueName": "C:\\Users\\davit\\OneDrive\\Desktop\\FastFoodApp\\FastFoodApp\\Fast Food Application\\FastFoodApplication\\FastFood.Models\\FastFood.Models.csproj",
       "projectName": "FastFood.Models",
-      "projectPath": "C:\\Users\\davit\\OneDrive\\Desktop\\FastFoodApp\\FastFoodApp\\FastFoodApplication\\FastFood.Models\\FastFood.Models.csproj",
+      "projectPath": "C:\\Users\\davit\\OneDrive\\Desktop\\FastFoodApp\\FastFoodApp\\Fast Food Application\\FastFoodApplication\\FastFood.Models\\FastFood.Models.csproj",
       "packagesPath": "C:\\Users\\davit\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\davit\\OneDrive\\Desktop\\FastFoodApp\\FastFoodApp\\FastFoodApplication\\FastFood.Models\\obj\\",
+      "outputPath": "C:\\Users\\davit\\OneDrive\\Desktop\\FastFoodApp\\FastFoodApp\\Fast Food Application\\FastFoodApplication\\FastFood.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
