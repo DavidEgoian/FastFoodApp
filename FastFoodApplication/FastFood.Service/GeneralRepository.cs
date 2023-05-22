@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 
 namespace FastFood.Service
 {
-    public class GeneralService : IGeneralRepository
+    public class GeneralRepository : IGeneralRepository
     {
         public async Task<General> GetBalance()
         {

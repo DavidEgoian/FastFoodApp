@@ -1,0 +1,17 @@
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.UI\bin\Debug\net7.0-windows\FastFood.UI.exe
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.UI\bin\Debug\net7.0-windows\FastFood.UI.deps.json
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.UI\bin\Debug\net7.0-windows\FastFood.UI.runtimeconfig.json
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.UI\bin\Debug\net7.0-windows\FastFood.UI.dll
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.UI\bin\Debug\net7.0-windows\FastFood.UI.pdb
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.UI\obj\Debug\net7.0-windows\FastFood.UI.csproj.AssemblyReference.cache
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.UI\obj\Debug\net7.0-windows\FastFood.UI.Form1.resources
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.UI\obj\Debug\net7.0-windows\FastFood.UI.csproj.GenerateResource.cache
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.UI\obj\Debug\net7.0-windows\FastFood.UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.UI\obj\Debug\net7.0-windows\FastFood.UI.AssemblyInfoInputs.cache
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.UI\obj\Debug\net7.0-windows\FastFood.UI.AssemblyInfo.cs
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.UI\obj\Debug\net7.0-windows\FastFood.UI.csproj.CoreCompileInputs.cache
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.UI\obj\Debug\net7.0-windows\FastFood.UI.dll
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.UI\obj\Debug\net7.0-windows\refint\FastFood.UI.dll
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.UI\obj\Debug\net7.0-windows\FastFood.UI.pdb
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.UI\obj\Debug\net7.0-windows\FastFood.UI.genruntimeconfig.cache
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.UI\obj\Debug\net7.0-windows\ref\FastFood.UI.dll
