@@ -1,19 +1,37 @@
-using FastFood.Models;
+﻿using FastFood.Models;
 using FastFood.Service;
 
 namespace FastFood.UI
 {
     public partial class Form1 : Form
     {
+        //var resultBalance = await GlobalConfig.DataConnection.GetBalance();
         public Form1()
         {
             InitializeComponent();
         }
 
-        private async void Form1_Load(object sender, EventArgs e)
+        private void exitLabel_Click(object sender, EventArgs e)
         {
-            var resultBalance = await GlobalConfig.GeneralRepository.GetBalance();
-            balanceLabel.Text = resultBalance.Balance.ToString();
+            Application.Exit();
+        }
+
+        private async void signInBtn_Click(object sender, EventArgs e)
+        {
+            if (FormIsValid())
+            {
+                var allEmployees = await GlobalConfig.DataConnection.GetAllEmployee();
+                var singleEmployee = await GlobalConfig.DataConnection.GetEmployeeByPin(pinValue.Text);
+            }
+            else
+            {
+                MessageBox.Show("შემოყვანილი პარამეტრები არასწორია", "არასწორი პარამეტრი", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private bool FormIsValid()
+        {
+            return !string.IsNullOrEmpty(pinValue.Text) && pinValue.Text.Length == 11;
         }
     }
 }
