@@ -9,6 +9,33 @@ namespace FastFood.Service
 {
     public class DataConnection : IDataConnection
     {
+        public async Task<Employee> AddNewEmployee(Employee model)
+        {
+            const string sqlExpression = "sp_addNewEmployee";
+            using (SqlConnection connection = new(GlobalConfig.ConnectionString))
+            {
+                try
+                {
+                    SqlCommand command = new(sqlExpression, connection);
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("employeePin", model.Pin);
+
+                    await connection.OpenAsync();
+                    await command.ExecuteNonQueryAsync();
+                }
+                catch (SqlException)
+                {
+                    throw;
+                }
+                finally
+                {
+                    await connection.CloseAsync();
+                }
+            }
+
+            return model;
+        }
+
         public async Task<List<Employee>> GetAllEmployee()
         {
             List<Employee> result = new();

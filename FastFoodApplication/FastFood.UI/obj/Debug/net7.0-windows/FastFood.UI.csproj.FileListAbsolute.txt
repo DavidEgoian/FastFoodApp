@@ -43,3 +43,5 @@ C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\Fast
 C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.UI\obj\Debug\net7.0-windows\FastFood.UI.pdb
 C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.UI\obj\Debug\net7.0-windows\FastFood.UI.genruntimeconfig.cache
 C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.UI\obj\Debug\net7.0-windows\ref\FastFood.UI.dll
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.UI\obj\Debug\net7.0-windows\FastFood.UI.MainForm.resources
+C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.UI\obj\Debug\net7.0-windows\FastFood.UI.CreateEmployeeForm.resources

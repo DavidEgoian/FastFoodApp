@@ -8,5 +8,6 @@ namespace FastFood.Service.Interfaces
         Task<General> GetBalance();
         Task<List<Employee>> GetAllEmployee();
         Task<Employee> GetEmployeeByPin(string pin);
+        Task<Employee> AddNewEmployee(Employee model);
     }
 }

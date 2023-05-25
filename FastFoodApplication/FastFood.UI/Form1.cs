@@ -5,7 +5,6 @@ namespace FastFood.UI
 {
     public partial class Form1 : Form
     {
-        //var resultBalance = await GlobalConfig.DataConnection.GetBalance();
         public Form1()
         {
             InitializeComponent();
@@ -22,11 +21,17 @@ namespace FastFood.UI
             {
                 var allEmployees = await GlobalConfig.DataConnection.GetAllEmployee();
                 var singleEmployee = await GlobalConfig.DataConnection.GetEmployeeByPin(pinValue.Text);
+                var companyBalance = await GlobalConfig.DataConnection.GetBalance();
 
-                if (allEmployees.Any(emp=>emp.Equals(singleEmployee)))
+                if (allEmployees.Any(emp => emp.Equals(singleEmployee)))
+                {
+                    //გადავიყვანო ახალ ფორმაზე
+                    MainForm mainForm = new(singleEmployee, companyBalance);
+                    mainForm.ShowDialog();
+                }
+                else
                 {
                     MessageBox.Show("მომხმარებელი ვერ მოიძებმა", "არასწორი მომხმარებელი", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
                 }
             }
             else
@@ -38,6 +43,12 @@ namespace FastFood.UI
         private bool FormIsValid()
         {
             return !string.IsNullOrWhiteSpace(pinValue.Text) && pinValue.Text.Length == 11;
+        }
+
+        private void newEmployeeLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            CreateEmployeeForm createEmployeeForm = new();
+            createEmployeeForm.ShowDialog();
         }
     }
 }

@@ -98,6 +98,7 @@
             newEmployeeLink.TabIndex = 5;
             newEmployeeLink.TabStop = true;
             newEmployeeLink.Text = "ახალი თანამშრომელი";
+            newEmployeeLink.LinkClicked += newEmployeeLink_LinkClicked;
             // 
             // Form1
             // 
