@@ -22,6 +22,12 @@ namespace FastFood.UI
             {
                 var allEmployees = await GlobalConfig.DataConnection.GetAllEmployee();
                 var singleEmployee = await GlobalConfig.DataConnection.GetEmployeeByPin(pinValue.Text);
+
+                if (allEmployees.Any(emp=>emp.Equals(singleEmployee)))
+                {
+                    MessageBox.Show("მომხმარებელი ვერ მოიძებმა", "არასწორი მომხმარებელი", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
             }
             else
             {
@@ -31,7 +37,7 @@ namespace FastFood.UI
 
         private bool FormIsValid()
         {
-            return !string.IsNullOrEmpty(pinValue.Text) && pinValue.Text.Length == 11;
+            return !string.IsNullOrWhiteSpace(pinValue.Text) && pinValue.Text.Length == 11;
         }
     }
 }
