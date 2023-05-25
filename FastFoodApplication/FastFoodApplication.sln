@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFood.Models", "FastFood
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFood.Service", "FastFood.Service\FastFood.Service.csproj", "{11B2036D-F275-4D5F-AD79-592E9C7B3AEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastFood.UI", "FastFood.UI\FastFood.UI.csproj", "{E7FE215D-A93B-439B-83C5-04EF680C6395}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFood.UI", "FastFood.UI\FastFood.UI.csproj", "{E7FE215D-A93B-439B-83C5-04EF680C6395}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastFood.Web", "FastFood.Web\FastFood.Web\FastFood.Web.csproj", "{94017462-50CC-49EC-92EB-03D2FDC4A79C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{E7FE215D-A93B-439B-83C5-04EF680C6395}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7FE215D-A93B-439B-83C5-04EF680C6395}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7FE215D-A93B-439B-83C5-04EF680C6395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94017462-50CC-49EC-92EB-03D2FDC4A79C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94017462-50CC-49EC-92EB-03D2FDC4A79C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94017462-50CC-49EC-92EB-03D2FDC4A79C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94017462-50CC-49EC-92EB-03D2FDC4A79C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
