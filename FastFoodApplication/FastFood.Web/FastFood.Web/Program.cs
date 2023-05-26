@@ -1,7 +1,11 @@
+using FastFood.Service;
+using FastFood.Service.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IDataConnection, DataConnection>();
 
 var app = builder.Build();
 

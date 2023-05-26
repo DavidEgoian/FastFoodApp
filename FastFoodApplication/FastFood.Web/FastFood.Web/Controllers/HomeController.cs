@@ -1,21 +1,23 @@
 ﻿using FastFood.Models;
+using FastFood.Service.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Razor.TagHelpers;
 using System.Diagnostics;
 
 namespace FastFood.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IDataConnection _dataConnection;
+        public HomeController(IDataConnection dataConnection)
         {
-            _logger = logger;
+            _dataConnection = dataConnection;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            List<Employee> result = await _dataConnection.GetAllEmployee();
+            return View(result);
         }
     }
 }
