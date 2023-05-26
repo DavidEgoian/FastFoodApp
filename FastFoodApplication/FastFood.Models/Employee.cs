@@ -1,10 +1,13 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 
 namespace FastFood.Models
 {
     public class Employee
     {
+        [Key]
         public int Id { get; set; }
+        [Required(ErrorMessage ="ველის შევსება სავალდებულოა")]
         public string Pin { get; set; }
 
         public override bool Equals(object obj)

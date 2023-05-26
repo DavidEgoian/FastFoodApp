@@ -24,5 +24,15 @@ namespace FastFood.Web.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public async Task<IActionResult> CreatePost(Employee newEmployee)
+        {
+            if (ModelState.IsValid)
+            {
+                await _dataConnection.AddNewEmployee(newEmployee);
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
     }
 }
