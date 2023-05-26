@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\davit\OneDrive\Desktop\FastFoodApp\FastFoodApp\FastFoodApplication\FastFood.Web\FastFood.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/davit/OneDrive/Desktop/FastFoodApp/FastFoodApp/FastFoodApplication/FastFood.Web/FastFood.Web/Views/Home/AddProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/davit/OneDrive/Desktop/FastFoodApp/FastFoodApp/FastFoodApplication/FastFood.Web/FastFood.Web/Views/Home/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
