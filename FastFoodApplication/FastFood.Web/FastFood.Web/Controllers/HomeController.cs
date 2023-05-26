@@ -19,5 +19,10 @@ namespace FastFood.Web.Controllers
             List<Employee> result = await _dataConnection.GetAllEmployee();
             return View(result);
         }
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }
