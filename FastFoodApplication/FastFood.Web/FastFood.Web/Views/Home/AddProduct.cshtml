@@ -1,7 +1,36 @@
-﻿
+﻿@model Product
 @{
     ViewData["Title"] = "პროდუქტის დამატება";
 }
-
 <h1>პროდუქტის დამატება</h1>
+<div class="row">
+    <form asp-controller="Home" asp-action="">
+        <div class="mb-3">
+            <label class="form-label" asp-for="Title"></label>
+            <input class="form-control" asp-for="Title" />
+            <span class="text-danger" asp-validation-for="Title"></span>
+        </div>
 
+        <div class="mb-3">
+            <label class="form-label" asp-for="Price"></label>
+            <input class="form-control" asp-for="Price" />
+            <span class="text-danger" asp-validation-for="Price"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" asp-for="Quantity"></label>
+            <input class="form-control" asp-for="Quantity" />
+            <span class="text-danger" asp-validation-for="Quantity"></span>
+        </div>
+
+        <div class="mb-3">
+            <input type="submit" class="btn btn-success" value="ახალი პროდუქტის დამატება" />
+        </div>
+    </form>
+</div>
+
+@section Scripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+}
