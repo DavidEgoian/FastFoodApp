@@ -34,5 +34,11 @@ namespace FastFood.Web.Controllers
             }
             return View();
         }
+
+        [HttpGet]
+        public IActionResult Products()
+        {
+            return View();
+        }
     }
 }
