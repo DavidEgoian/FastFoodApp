@@ -173,7 +173,7 @@ namespace FastFood.Service
                             {
                                 Id = reader.GetInt32(0),
                                 Title = reader.GetString(1),
-                                Price = reader.GetFloat(2),
+                                Price = reader.GetDouble(2),
                                 Quantity = reader.GetInt32(3)
                             });
                         }
