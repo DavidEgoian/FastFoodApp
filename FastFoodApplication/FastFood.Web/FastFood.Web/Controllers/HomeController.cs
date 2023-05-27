@@ -35,12 +35,18 @@ namespace FastFood.Web.Controllers
             return View();
         }
 
-        public IActionResult Products()
+        public async IActionResult Products()
         {
-            return View();
+            List<Product> result = await _dataConnection.GetAllProducts();
+            return View(result);
         }
-        public IActionResult AddProduct()
+        public async Task<IActionResult> AddProduct(Product newProduct)
         {
+            if (ModelState.IsValid)
+            {
+                await _dataConnection.AddNewProduct(newProduct);
+                return RedirectToAction("Products");
+            }
             return View();
         }
     }
