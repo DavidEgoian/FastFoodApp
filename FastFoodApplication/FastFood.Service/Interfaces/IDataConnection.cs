@@ -9,5 +9,7 @@ namespace FastFood.Service.Interfaces
         Task<List<Employee>> GetAllEmployee();
         Task<Employee> GetEmployeeByPin(string pin);
         Task<Employee> AddNewEmployee(Employee model);
+        Task<List<Product>> GetAllProducts();
+        Task<Product> AddNewProduct(Product model);
     }
 }
