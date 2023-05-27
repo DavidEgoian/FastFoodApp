@@ -149,5 +149,73 @@ namespace FastFood.Service
             }
             return result;
         }
+        public async Task<List<Product>> GetAllProducts()
+        {
+            List<Product> result = new();
+            const string sqlExpression = "sp_getAllProducts";
+
+            using (SqlConnection connection = new(GlobalConfig.ConnectionString))
+            {
+                try
+                {
+                    SqlCommand command = new(sqlExpression, connection);
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    await connection.OpenAsync();
+
+                    SqlDataReader reader = await command.ExecuteReaderAsync();
+
+                    if (reader.HasRows)
+                    {
+                        while (await reader.ReadAsync())
+                        {
+                            result.Add(new Product
+                            {
+                                Id = reader.GetInt32(0),
+                                Title = reader.GetString(1),
+                                Price = reader.GetFloat(2),
+                                Quantity = reader.GetInt32(3)
+                            });
+                        }
+                    }
+                }
+                catch (SqlException)
+                {
+                    throw;
+                }
+                finally
+                {
+                    await connection.CloseAsync();
+                }
+            }
+            return result;
+        }
+        public async Task<Product> AddNewProduct(Product model)
+        {
+            const string sqlExpression = "sp_addNewProduct";
+            using (SqlConnection connection = new(GlobalConfig.ConnectionString))
+            {
+                try
+                {
+                    SqlCommand command = new(sqlExpression, connection);
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("title", model.Title);
+                    command.Parameters.AddWithValue("price", model.Price);
+                    command.Parameters.AddWithValue("quantity", model.Quantity);
+
+                    await connection.OpenAsync();
+                    await command.ExecuteNonQueryAsync();
+                }
+                catch (SqlException)
+                {
+                    throw;
+                }
+                finally
+                {
+                    await connection.CloseAsync();
+                }
+            }
+            return model;
+        }
     }
 }
