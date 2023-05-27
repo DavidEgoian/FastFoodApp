@@ -35,7 +35,7 @@ namespace FastFood.Web.Controllers
             return View();
         }
 
-        public async IActionResult Products()
+        public async Task<IActionResult> Products()
         {
             List<Product> result = await _dataConnection.GetAllProducts();
             return View(result);
