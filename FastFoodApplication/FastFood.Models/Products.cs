@@ -11,7 +11,6 @@ namespace FastFood.Models
         public string Title { get; set; }
         [Required(ErrorMessage = "ველის შევსება სავალდებულოა")]
         public double Price { get; set; }
-        [Required(ErrorMessage = "ველის შევსება სავალდებულოა")]
         public int Quantity { get; set; }
         public override bool Equals(object obj)
         {
