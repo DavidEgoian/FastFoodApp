@@ -40,7 +40,16 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-sm">
+        @foreach (var item in Model)
+        {
+            <div class="col-sm">
+                <p>ID: @item.Id</p>
+                <p>დასახელება: @item.Title</p>
+                <p>ფასი: @item.Price</p>
+                <p>რაოდენობა: @item.Quantity</p>
+            </div>
+        }
+       @* <div class="col-sm">
             One of three columns
         </div>
         <div class="col-sm">
@@ -48,6 +57,6 @@
         </div>
         <div class="col-sm">
             One of three columns
-        </div>
+        </div>*@
     </div>
 </div>
