@@ -4,7 +4,7 @@
 }
 <h1>პროდუქტის დამატება</h1>
 <div class="row">
-    <form asp-controller="Home" asp-action="">
+    <form asp-controller="Home" asp-action="CreateAddProduct">
         <div class="mb-3">
             <label class="form-label" asp-for="Title"></label>
             <input class="form-control" asp-for="Title" />
@@ -20,7 +20,6 @@
         <div class="mb-3">
             <label class="form-label" asp-for="Quantity"></label>
             <input class="form-control" asp-for="Quantity" />
-            <span class="text-danger" asp-validation-for="Quantity"></span>
         </div>
 
         <div class="mb-3">

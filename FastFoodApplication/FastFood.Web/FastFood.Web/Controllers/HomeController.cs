@@ -30,17 +30,23 @@ namespace FastFood.Web.Controllers
             if (ModelState.IsValid)
             {
                 await _dataConnection.AddNewEmployee(newEmployee);
-                return RedirectToAction("Index");
+                //return RedirectToAction("Products");
             }
             return View();
         }
-
+        //
         public async Task<IActionResult> Products()
         {
             List<Product> result = await _dataConnection.GetAllProducts();
             return View(result);
         }
-        public async Task<IActionResult> AddProduct(Product newProduct)
+        [HttpGet]
+        public async Task<IActionResult> AddProduct()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> CreateAddProduct(Product newProduct)
         {
             if (ModelState.IsValid)
             {

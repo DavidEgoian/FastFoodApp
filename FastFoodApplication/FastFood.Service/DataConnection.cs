@@ -4,6 +4,7 @@ using FastFood.Service.Interfaces;
 using Microsoft.Data.SqlClient;
 using System.Data;
 using System.Linq.Expressions;
+using System.Net.NetworkInformation;
 
 namespace FastFood.Service
 {
@@ -190,6 +191,43 @@ namespace FastFood.Service
             }
             return result;
         }
+        public async Task<Product> GetProductByTitle(string title)
+        {
+            Product result = new();
+            const string sqlExpression = "sp_getProductByTitle";
+
+            using (SqlConnection connection = new(GlobalConfig.ConnectionString))
+            {
+                try
+                {
+                    SqlCommand command = new(sqlExpression, connection);
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("title", title);
+
+                    await connection.OpenAsync();
+                    SqlDataReader reader = await command.ExecuteReaderAsync();
+
+                    if (reader.HasRows)
+                    {
+                        while (await reader.ReadAsync())
+                        {
+                            result.Id = reader.GetInt32(0);
+                            result.Title = reader.GetString(1);
+                        }
+                    }
+                }
+                catch (SqlException)
+                {
+
+                    throw;
+                }
+                finally
+                {
+                    await connection.CloseAsync();
+                }
+            }
+            return result;
+        }
         public async Task<Product> AddNewProduct(Product model)
         {
             const string sqlExpression = "sp_addNewProduct";
@@ -199,9 +237,9 @@ namespace FastFood.Service
                 {
                     SqlCommand command = new(sqlExpression, connection);
                     command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.AddWithValue("title", model.Title);
-                    command.Parameters.AddWithValue("price", model.Price);
-                    command.Parameters.AddWithValue("quantity", model.Quantity);
+                    command.Parameters.AddWithValue("@title", model.Title);
+                    command.Parameters.AddWithValue("@price", model.Price);
+                    command.Parameters.AddWithValue("@quantity", model.Quantity);
 
                     await connection.OpenAsync();
                     await command.ExecuteNonQueryAsync();
