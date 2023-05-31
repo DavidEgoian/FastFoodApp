@@ -240,6 +240,9 @@ namespace FastFood.Service
                     command.Parameters.AddWithValue("@title", model.Title);
                     command.Parameters.AddWithValue("@price", model.Price);
                     command.Parameters.AddWithValue("@quantity", model.Quantity);
+                    //
+                    command.Parameters.AddWithValue("@productImage", model.ProductImage);
+                    //
 
                     await connection.OpenAsync();
                     await command.ExecuteNonQueryAsync();
