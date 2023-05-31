@@ -5,7 +5,7 @@
 
 <h1>პროდუქტების სია</h1>
 <a asp-controller="Home" asp-action="AddProduct" class="btn btn-success ">ახალი პროდუქტის დამატება</a>
-<div class="container">
+@*<div class="container">
     <div class="row">
         @foreach (var item in Model)
         {
@@ -15,6 +15,41 @@
                 <p>@item.Title</p>
                 <b>ლ</b><b>@item.Price</b>
                 <p class="quantity">რაოდენობა: @item.Quantity</p>
+            </div>
+        }
+    </div>
+</div>*@
+
+<div class="container">
+    <div class="row">
+        @for (int i = 0; i < 1; i++)
+        {
+            <div class="col-sm">
+                <br>
+                <img src="https://github.com/DavidEgoyan/FastFoodApp/blob/main/Images/Burger.png?raw=true" alt="..." class="img-thumbnail">
+                <p>@Model[i].Title</p>
+                <b>ლ</b><b>@Model[i].Price</b>
+                <p class="quantity">რაოდენობა: @Model[i].Quantity</p>
+            </div>
+        }
+        @for (int i = 1; i < 2; i++)
+        {
+            <div class="col-sm">
+                <br>
+                <img src="https://github.com/DavidEgoyan/FastFoodApp/blob/main/Images/Fries.png?raw=true" alt="..." class="img-thumbnail">
+                <p>@Model[i].Title</p>
+                <b>ლ</b><b>@Model[i].Price</b>
+                <p class="quantity">რაოდენობა: @Model[i].Quantity</p>
+            </div>
+        }
+        @for (int i = 2; i < 3; i++)
+        {
+            <div class="col-sm">
+                <br>
+                <img src="https://github.com/DavidEgoyan/FastFoodApp/blob/main/Images/HotDog.png?raw=true" alt="..." class="img-thumbnail">
+                <p>@Model[i].Title</p>
+                <b>ლ</b><b>@Model[i].Price</b>
+                <p class="quantity">რაოდენობა: @Model[i].Quantity</p>
             </div>
         }
     </div>
