@@ -5,58 +5,17 @@
 
 <h1>პროდუქტების სია</h1>
 <a asp-controller="Home" asp-action="AddProduct" class="btn btn-success ">ახალი პროდუქტის დამატება</a>
-
-@*<div class="row mt-5">
-    <table class="table table-striped table-bordered">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>პროდუქტის სახელი</th>
-                <th>ფასი</th>
-                <th>რაოდენობა</th>
-                <th>მენეჯმენტი</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-
-                    <td>@item.Id</td>
-                    <td>@item.Title</td>
-                    <td>@item.Price</td>
-                    <td>@item.Quantity</td>
-                    <td>
-                        <a class="btn btn-primary">რედაქტირება</a>
-                        <a class="btn btn-danger">წაშლა</a>
-
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-</div>
-*@
-
 <div class="container">
     <div class="row">
         @foreach (var item in Model)
         {
             <div class="col-sm">
-                <p>ID: @item.Id</p>
-                <p>დასახელება: @item.Title</p>
-                <p>ფასი: @item.Price</p>
-                <p>რაოდენობა: @item.Quantity</p>
+                <br>
+                <img src="@item.ProductImage" alt="..." class="img-thumbnail">
+                <p>@item.Title</p>
+                <b>ლ</b><b>@item.Price</b>
+                <p class="quantity">რაოდენობა: @item.Quantity</p>
             </div>
         }
-       @* <div class="col-sm">
-            One of three columns
-        </div>
-        <div class="col-sm">
-            One of three columns
-        </div>
-        <div class="col-sm">
-            One of three columns
-        </div>*@
     </div>
 </div>

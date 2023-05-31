@@ -6,6 +6,12 @@
 <div class="row">
     <form asp-controller="Home" asp-action="CreateAddProduct">
         <div class="mb-3">
+            <label class="form-label" asp-for="ProductImage"></label>
+            <input class="form-control" type="file" asp-for="ProductImage" />
+            <span class="text-danger" asp-validation-for="ProductImage"></span>
+        </div>
+
+        <div class="mb-3">
             <label class="form-label" asp-for="Title"></label>
             <input class="form-control" asp-for="Title" />
             <span class="text-danger" asp-validation-for="Title"></span>

@@ -1,5 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
+using System.Reflection;
+//using System.Drawing;
 
 namespace FastFood.Models
 {
@@ -7,6 +9,8 @@ namespace FastFood.Models
     {
         [Key]
         public int Id { get; set; }
+        [Required(ErrorMessage = "ველის შევსება სავალდებულოა")]
+        public byte[] ProductImage { get; set; }
         [Required(ErrorMessage = "ველის შევსება სავალდებულოა")]
         public string Title { get; set; }
         [Required(ErrorMessage = "ველის შევსება სავალდებულოა")]

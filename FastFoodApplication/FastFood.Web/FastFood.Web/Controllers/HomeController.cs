@@ -30,7 +30,7 @@ namespace FastFood.Web.Controllers
             if (ModelState.IsValid)
             {
                 await _dataConnection.AddNewEmployee(newEmployee);
-                //return RedirectToAction("Products");
+                return RedirectToAction("Index");
             }
             return View();
         }
